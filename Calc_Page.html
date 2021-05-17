@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calc_Page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span>Calculator</span>
+      <form action="" onsubmit="return false">
+        <input type="text" name=number1 placeholder="Operand 1"/>
+        <input type="text" name=number2 placeholder="Operand 2"/>
+        <input type="text" id="output" placeholder="Result" readonly/>
+        <button onclick="add(number1.value, number2.value)">Add</button>
+        <button onclick="subtract(number1.value, number2.value)">Subtract</button>
+        <button onclick="multiply(number1.value, number2.value)">Multiply</button>
+        <button onclick="divide(number1.value, number2.value)">Divide</button>
+      </form>
+    </div>
+    <script src="Calculator.js"></script>
+  </body>
+  
+</html>
